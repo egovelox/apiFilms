@@ -1,0 +1,38 @@
+
+<div class="container">
+  <div class="left">
+    <div class="title-div">
+      {{ filmDetails.title }}
+    </div>
+    <p>
+      <span *ngFor="let genre of genres">{{ genre.name }} &nbsp;</span>
+    </p>
+    <div class="synopsis-div">
+      <p>
+        {{ filmDetails.overview }}
+      </p>
+    </div>
+    <div class="trailer-div" *ngIf="isTrailerLoaded">
+      <div *ngFor="let trailer of trailers">
+        <youtube-player
+          [width]="200"
+          [videoId]="trailer.key"
+          (ready)="savePlayer($event)"
+          (change)="onStateChange($event)"
+        ></youtube-player>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="image-div">
+      <img class="filmImage" [src]="imagePath + filmDetails.poster_path" />
+    </div>
+    <div class="companies">
+      <br />
+      <h3>Pays d'origine:</h3>
+      <p *ngFor="let country of countries">
+        {{ country.name }}
+      </p>
+    </div>
+  </div>
+</div>

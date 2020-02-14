@@ -1,0 +1,41 @@
+.film-div
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    width: auto;
+    background-color: black;
+    color: lightblue;
+    border-left: 8px dashed lightslategray;
+    border-right: 8px dashed lightslategray;
+}
+.presentation-div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-div
+{
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 8px 0;
+}
+
+.details-button
+{
+    cursor: pointer;
+    margin-top: 8px;
+    background-color: black;
+    border: none;
+    font-size: 1.8rem;
+}
+
+ .image-div
+{
+    width: 500px;
+    height: 282px;
+    overflow: hidden;
+}

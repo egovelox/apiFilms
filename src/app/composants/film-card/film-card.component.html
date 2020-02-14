@@ -1,0 +1,18 @@
+<div class="film-div">
+  <div class="presentation-div">
+    <div class="title-div">
+      {{film.title}}
+    </div>
+    <div class="date-div">{{ film.release_date | date: "dd/MM/yyyy" }} - note: {{ film.vote_average }}</div>
+  </div>
+  <div class="image-div">
+    <img [src]="imagePath + film.backdrop_path" />
+  </div>
+  <div class="details-div">
+    <button
+      class="details-button"
+      [routerLink]="['/films', film.id]"
+      routerLinkActive="router-link-active"
+    > &#9889; </button>
+  </div>
+</div>

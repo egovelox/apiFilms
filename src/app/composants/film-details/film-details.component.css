@@ -1,0 +1,37 @@
+.container
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left
+{
+    width: 60%;
+}
+
+.filmImage
+{
+    width: 200px;
+}
+
+.title-div
+{
+    font-size: 1.4rem;
+}
+.synopsis-div
+{
+    font-size: 1.3rem;
+}
+
+
+.trailer-div
+{
+    margin: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    text-align: center;
+    border-left: 5px lightslategray dashed;
+    border-right: 5px lightslategray dashed;
+}

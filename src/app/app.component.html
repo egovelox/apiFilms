@@ -1,0 +1,13 @@
+<nav class="nav-bar">
+  <div
+    class="nav-item"
+    [routerLink]="['/films']"
+    routerLinkActive="router-link-active"
+  >
+    Films
+  </div>
+  <div class="nav-item" [routerLink]="['/newfilms']"
+  routerLinkActive="router-link-active">Coming Soon</div>
+</nav>
+
+<router-outlet></router-outlet>
